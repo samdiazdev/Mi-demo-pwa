@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#172554">
+  <meta name="description" content="Demo de aplicación personal que funciona sin conexión.">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Mi Demo</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">M</div>
+      <div><p class="eyebrow">APLICACIÓN PERSONAL</p><h1>Mi Demo</h1></div>
+      <span id="status" class="status">Comprobando…</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">PRUEBA DE INSTALACIÓN</p>
+      <h2>¡Ya tienes tu app!</h2>
+      <p>Esta pequeña demo guarda tus datos en este dispositivo y puede abrirse sin conexión.</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-top"><div><p class="eyebrow">CONTADOR LOCAL</p><h2 id="count">0</h2></div><span class="bubble">↗</span></div>
+      <p class="muted">Pulsa el botón para guardar un registro de prueba.</p>
+      <div class="actions">
+        <button id="add">Añadir registro</button>
+        <button id="reset" class="secondary">Reiniciar</button>
+      </div>
+    </section>
+
+    <section class="panel info">
+      <h3>Estado de la aplicación</h3>
+      <p><span class="dot"></span> <span id="storage">Preparando almacenamiento…</span></p>
+      <p><span class="dot"></span> <span id="offline">Comprobando conexión…</span></p>
+      <p class="hint">Consejo: después de instalarla, activa el modo avión y vuelve a abrirla para comprobar que funciona sin Internet.</p>
+    </section>
+    <footer>Demo PWA · Los datos permanecen en este navegador/dispositivo.</footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Mi Demo Personal",
+  "short_name": "Mi Demo",
+  "description": "Demo personal instalable y disponible sin conexión.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f5fa",
+  "theme_color": "#172554",
+  "icons": [
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
